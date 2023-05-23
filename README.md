@@ -26,7 +26,7 @@
 
 ###  7. Lakukan penghapusan data pada table dosen
 
-
+![7](foto/a7.png)
 
 ## Evaluasi dan Pertanyaan
 
