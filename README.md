@@ -2,30 +2,39 @@
 
 ### 1. Lakukan penambahan data pada table mahasiswa dengan mengisi kd_ds yang belum ada pada data dosen
 
+`update mahasiswa set kd_ds='1234' where nim='11223344';`
 ![1](foto/a1.png)
 
 ### 2. Hapus satu record data pada table dosen yang telah dirujuk pada tabel mahasiswa
 
+`update mahasiswa set kd_ds=null where kd_ds='1234';`
 ![2](foto/a2.png)
 
 ### 3. Ubah mode menjadi ON UPDATE CASCADE ON DELETE RESTRICT
 
+`Alter table mahasiswa add Constraint Mahasiswa_ibfk_1 foreign key (kd_ds) references dosen (kd_ds) pada update cascade pada delete restrict;`
 ![3](foto/a3-6.png)
 
 ### 4. Lakukan perubahan data pada table dosen kd_ds
 
+`update dosen set kd_ds = '9' where kd_ds = '8';`
 ![4](foto/a4.png)
 
 ### 5. Lakukan penghapusan data pada table dosen
 
+`delete from dosen where kd_ds='8';`
 ![5](foto/a5.png)
 
 ### 6. Ubah mode menjadi ON UPDATE CASCADE ON DELETE SET NULL
 
+`Alter table mahasiswa add Constraint Mahasiswa_ibfk_1 foreign key (kd_ds) references dosen (kd_ds) pada update cascade pada delete restrict;`
 ![6](foto/a3-6.png)
 
 ###  7. Lakukan penghapusan data pada table dosen
 
+`delete from dosen where kd_ds;`
+
+`delete from dosen where nama;`
 ![7](foto/a7.png)
 
 ## Evaluasi dan Pertanyaan
