@@ -31,3 +31,9 @@
 ## Evaluasi dan Pertanyaan
 
 ### 1. Apa bedanya penggunaan RESTRICT dan penggunaan CASCADE
+
+Penggunaan RESTRICT dan CASCADE adalah dua opsi yang tersedia dalam basis data untuk mengatur tindakan yang diambil terkait integritas referensial saat terjadi perubahan atau penghapusan data dalam tabel yang memiliki hubungan referensial dengan tabel lain. Berikut adalah perbedaan antara keduanya:
+
+RESTRICT: Ketika opsi RESTRICT digunakan, itu berarti basis data akan menghentikan operasi yang akan melarang integritas referensial. Jika ada hubungan referensial antara dua tabel dan Anda mencoba menghapus atau memodifikasi data yang akan melanggar hubungan referensial tersebut, operasi tersebut akan gagal dan menghasilkan pesan kesalahan. Dalam konteks penghapusan data, jika ada entri yang dikaitkan dengan entri lain dalam tabel yang berhubungan, pemusnahan akan dihentikan.
+
+CASCADE: Pada saat menggunakan op
